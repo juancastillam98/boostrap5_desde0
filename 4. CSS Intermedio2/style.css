@@ -1,0 +1,107 @@
+/*
+    primary-color: 0061ff;
+    secondary-color: ff0f7b;
+    danger-color: ff0f7b;
+    danger-color: e81cff;
+*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 95%;
+    /*El ancho del contenedor es del95%*/
+    max-width: 600px;
+    /*sin embargo, el ancho máximo es de 600. O lo que es lo mismo
+    cuando el ancho sea menor de 600, se pone al 95%*/
+
+    /*Centrar el contenid esto -> hacemos que el navegador, genere los márgenes automáticamente*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+    /*2 * 16px = 32px*/
+}
+
+.logo {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    /*recuerda, no se centra porque es un elemento en línea, 
+    por eso se usa el display block*/
+    font-size: 3rem;
+    background-color: #0061ff;
+    color: white;
+    padding: 1em;
+    /*recuerda, es relativo al padre, que son 3rem=48px*/
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0 0.1em;
+    border-radius: 0.5em;
+}
+
+.btn-primary {
+    background-color: #0061ff;
+    color: white;
+}
+
+.btn-secundary {
+    background-color: #ff0f7b;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #ff0f7b;
+    color: black;
+}
+
+.btn-info {
+    color: black;
+    background-color: #e81cff;
+}
+
+.card {
+    width: 20rem;
+    background-color: #0061ff;
+    overflow: hidden;
+    /*recorta el elemento las dimensiones establecidas por el contenedor (en este caso 20rem)*/
+    color: white;
+    border-radius: 0.5em;
+}
+.card-img{
+    width: 100%;
+}
+.card-body{
+    padding: 1rem;
+}
+.card-body h5{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-weight: 700;
+}
+.card-body p{
+    font-weight: 300;
+}
+.card-body a{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 18rem;
+}

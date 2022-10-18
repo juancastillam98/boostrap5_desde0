@@ -1,0 +1,112 @@
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+.border {
+    border: 2px solid black;
+}
+
+.item {
+    background-color: aqua;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+}
+
+.h-700 {
+    height: 700px;
+}
+
+.h-300 {
+    height: 300px;
+}
+
+.centrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap es el responsable de hacer que los elementos,
+    se adapten o no a las dimensiones del contendor*/
+    /*flex-wrap: nowrap;*/
+    /* nowrap, hacen que los elementos se hagan más pequeños para adaptarse a las dimensiones del contenedor*/
+    flex-wrap: wrap;
+    /* wrap, hace que los elementos conserven sus dimensiones y se distribuyan por el contenedor para adaptarse a sus dimensiones*/
+
+    /*alineación eje Y -> Ejecutar todas las opciones para ver como funciona*/
+    /*justify-content: center;*/
+    
+    /*align items, alinea toda la filaDe nuevo, mirar las opciones; por defecto esta strech*/
+    /* align-items: center;
+
+    Align contenen alinea todos los elementos
+    align-content: space-between;
+    */
+}
+
+/*Propiedades flex de los elementos*/
+/*Order es para dar prioridad a los elementos, empezando por default 0;
+Cuanto más bajo sea el nº, mayor será su prioridad*/
+.order-1 {
+    /*Order 1, indico que se muestre primero, el elemento de la posición 1 (Recuerda, se empieza a contar desde la posicón 0)*/
+    order: 1;
+}
+/*Flex-grow es una propiedad que intenta abarcar siempre el 100% el contenido. O sea, que se agrandará todo lo que pueda
+AL igual que order, funciona con un orden de prioridad, pero al revés.
+A mayor nº, mayor es la prioridad y por consiguiente, más contenido abarcará.*/
+.flex-grow-1{
+    flex-grow: 1;
+}
+.flex-grow-2 {
+    flex-grow: 2;
+}
+
+/*Flex shrink es una propiedad que hace que el item no reduzca su tamaño establecido
+Para que funcione, hay que establecerle un ancho mínimo*/
+/*O sea, con flex-shrink hago que el contenedor no se reduzca del ancho mínimo*/
+/*Una curiosidad de flex-shrink, es que si el ancho mínimo es de 300,
+el navegador no podrá reducirse más de 300px
+0 indico que no se achique más de los 300px
+1 en adelante, sí se irán achicando > nº = mayor factor de contracción
+*/
+.flex-shrink-0{
+    width: 300px;
+    flex-shrink: 0;
+}
+/*Obligamos a que un elemento tenga unas dimensiones obligatorias
+respecto al tamaño disponible*/
+.flex-basis-1{
+    flex-basis: 50%;
+}
+
+/*La propiedad flex, es un atajo para llamar al resto de propiedades.
+1. flex-grow
+2. Flex-shrink (valor inicial
+3. Flex-basis
+*/
+
+.flex-1{
+    flex: 1;
+}
+/*Con flex-shrink 0, indico que no se achiquen los elementos*/
+.flex-2{
+    flex: 1 0 300px;
+}
+/*Con align-self, obligo a que un elemtno specífico, no sufra
+las especificaciones del resto
+POR EJEMPLO:  Si todos los elementos tienten align-items: strech, pero
+quiero que uno de ellos no lo tenga, le pongo el align-selft
+*/
+.align-self-start{
+    align-self: flex-start;
+}

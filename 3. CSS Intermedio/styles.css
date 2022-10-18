@@ -1,0 +1,140 @@
+.border-solid {
+    border-style: solid;
+}
+
+.border-dashed {
+    border-style: dashed;
+}
+
+.w-100 {
+    width: 100px;
+}
+
+/*
+elemento {
+    display: block;
+}
+
+Un elemento de nivel de bloque siempre 
+comienza en una nueva línea y ocupa todo el 
+ancho disponible (se extiende hacia la izquierda 
+y la derecha tanto como sea posible). #
+
+Ejemplos de elementos a nivel de bloque: 
+<div>
+<h1>- <h6>
+<p>
+<form>
+<encabezado>
+<footer>
+<sección>
+*/
+.display-inline {
+    display: inline;
+}
+
+/*La diferencia respecto a inline, es que display:inline-block permite 
+establecer un ancho y alto al elemento. 
+TAMPOCO AGREGA UN SALTO DE LÍNEA*/
+.d-inline-block {
+    display: inline-block;
+}
+
+/*
+Un elemento en línea no comienza en una nueva línea 
+y solo ocupa el ancho que sea necesario. 
+#Ejemplos de elementos en línea: 
+<span>
+<a>
+<img>#
+*/
+
+.div1 {
+    width: 300px;
+    /*Define el ancho del bloque*/
+    padding: 25px;
+}
+
+/*Importante
+Aquí, el elemento <div>tiene un ancho de 300 px. Sin embargo,
+el ancho real del elemento <div>será de 350 px 
+(300 px + 25 px de relleno izquierdo + 25 px de relleno derecho)
+*/
+.div2 {
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+    /*Fija el tamaño del div2*/
+}
+
+/*
+Para mantener el ancho a 300 px,
+sin importar la cantidad de relleno,
+puede usar la propiedad box-sizing: border-box. Esto hace que el elemento mantenga su ancho;
+Si aumenta el relleno, el espacio de contenido disponible disminuirá.
+*/
+
+/*
+Medidas relativas 
+Las unidades relativas no son valores exactos sino que se 
+calculan a partir de otro valor de referencia. 
+A pesar de parecer más difíciles de calcular son las más utilizadas 
+en el diseño de sitios web responsive por su adaptabilidad a 
+os diferentes dispositivos. 
+    em: Tamaño relativo al tamaño de texto de su contenedor. 
+    rem: Funciona igual que el em, con la diferencia que es relativo al 
+    valor de la fuente del elemento html
+*/
+html {
+    font-size: 18px;
+}
+
+/*Rem hace que las medidas sean relativas al html, en este caso 18px*/
+h1 {
+    font-size: 1rem;
+    /*
+        1 rem = 1 x 16px
+        2 rem = 2 * 16px = 32px
+        0.5 rem = 8px
+    */
+    background-color: aqua;
+    padding: 5rem;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 32px;
+}
+
+h1 {
+    /* Ahora serán 32px! 
+    Con em pasa lo mismo que rem, pero en vez de
+    cojer el html, coje el del contenedor padre. 
+    En este caso el body. Si por algún motivo
+    no estuviera definido las dimensiones en el body, 
+    se masa al padre (html)
+    */
+    font-size: 1em;
+    background-color: aqua;
+    padding: 5rem;
+}
+p{
+    font-size: 2rem;
+}
+
+/*
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2rem;
+    background-color: aqua;
+    padding: 1em;
+*/
+.border-box{
+    box-sizing: border-box;
+}

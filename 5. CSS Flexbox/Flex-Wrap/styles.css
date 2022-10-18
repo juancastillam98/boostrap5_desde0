@@ -1,0 +1,51 @@
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+.border{
+    border: 2px solid black;
+}
+.item{
+    background-color: aqua;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+}
+.h-700{
+    height: 700px;
+}
+.h-300{
+    height: 300px;
+}
+
+.centrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap es el responsable de hacer que los elementos,
+    se adapten o no a las dimensiones del contendor*/
+    /*flex-wrap: nowrap;*/
+    /* nowrap, hacen que los elementos se hagan más pequeños para adaptarse a las dimensiones del contenedor*/
+    flex-wrap: wrap;
+    /* wrap, hace que los elementos conserven sus dimensiones y se distribuyan por el contenedor para adaptarse a sus dimensiones*/
+
+    /*alineación eje Y -> Ejecutar todas las opciones para ver como funciona*/
+    justify-content: center;
+
+    /*align items, alinea toda la filaDe nuevo, mirar las opciones; por defecto esta strech*/
+    align-items: center;
+
+    /*Align contenen alinea todos los elementos*/
+    align-content: space-between;
+}

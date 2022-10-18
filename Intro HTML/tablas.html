@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--tabla básica-->
+    <table border='1'>
+        <tr>
+            <!--tr = Fila-->
+            <td>Gato</td>
+            <!--Td = columna -->
+            <td>3 años</td>
+            <td>Negro</td>
+        </tr>
+        <tr>
+            <td>Perro</td>
+            <td>1 mes</td>
+            <td>Azul</td>
+        </tr>
+    </table>
+
+    <br /><br />
+    <!--th define los encabezados-->
+    <table border="1px">
+        <tr>
+            <th>Mascota</th>
+            <th>Edad</th>
+            <th>Color</th>
+        </tr>
+        <tr>
+            <td>Gato</td>
+            <td>3 años</td>
+            <td>Negro</td>
+        </tr>
+        <tr>
+            <td>Perro</td>
+            <td>1 mes</td>
+            <td>Azul</td>
+        </tr>
+    </table>
+
+    <br /><br />
+    <!--Titulos de tabla con caption-->
+    <table border='1'>
+        <!-- Título de la tabla -->
+        <caption>Titulo de la tabla</caption>
+        <tr>
+            <th>Mascota</th>
+            <th>Edad</th>
+            <th>Color</th>
+        </tr>
+    </table>
+
+    <br /><br />
+    <!--Estucturar tablas grandes, thead, tbody y tfoot-->
+    <table border='1'>
+        <caption>Titulo de la tabla</caption>
+        <!-- Encabezado:
+            
+            Thead al igual que tbody y tfoot, simplemente sirve como guía para estructurar el contenido de cara al desarrollador. Es como tabular el contenido en programación, que simplemente sirve para que el programador lea mejor el código pero que realmente al intérprete le importa un pimiento como organices tu código.
+
+            No obstante, al navegador sí que le ayuda que esté el contenido mejor organizado, pues al poner thead aútomáticamente lo interpreta como encabezado y por consiguiente lo sitúa en la parte superior. Con el tbody sitúa el contenido como si fuera (body) y el tfoof lo sitúa al pie de tabla.
+        -->
+        <thead>
+            <tr>
+                <th>Mascota</th>
+                <th>Edad</th>
+                <th>Color</th>
+            </tr>
+        </thead>
+        <!-- Pie de tabla -->
+        <tfoot>
+            <tr>
+                <th>Mascota</th>
+                <th>Edad</th>
+                <th>Color</th>
+            </tr>
+        </tfoot>
+        <!-- contenido -->
+        <tbody>
+            <tr>
+                <td>Gato</td>
+                <td>3 años</td>
+                <td>Negro</td>
+            </tr>
+            <tr>
+                <td>Perro</td>
+                <td>1 mes</td>
+                <td>Azul</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

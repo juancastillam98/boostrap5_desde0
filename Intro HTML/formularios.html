@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Formularios</h1>
+
+    <form action="recibir.html" method="GET">
+        <!--requierd indica que el campo es obligatorio-->
+        Nombre: <input type="email" name="nombre" required>
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <input type="password">
+    <textarea name="mensaje" rows="10" cols="30">
+    Ingrese aquí su mensaje
+    </textarea>
+    <br>
+    <form>
+        <input type="radio" id="gato" name="gender" value="gato">
+        <label for="gato">Gato</label>
+        <input type="radio" id="perro" name="gender" value="perro">
+        <label for="perro">Perro</label>
+
+        <!--label es una etiqueta para mostrar y relacionar el texto a escribir con lo que introduce el usuario en el input-->
+        <label for="otros">
+            <!--En el for del label, tenemos que colocar el id del input, para relacionarlo-->
+            <input type="radio" id="otro" name="gender" value="otro">
+            Otro
+        </label>
+    </form>
+    <p>Enlace HTML distintos inputs type <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/input">Enlace</a></p>
+    <br>
+    <h3>Tipos de selectores</h3>
+    <!--Botón Enivar-->
+    <input type="button" value="Enviar"><br><br>
+    <!--seleccionar color-->
+    <input type="color"><br><br>
+    <!--seleccionar fecha dd/mm/aaaa-->
+    <input type="date"><br><br>
+    <!--seleccionar fecha y hora-->
+    <input type="datetime-local"><br><br>
+    <!--seleccionar un archivo-->
+    <input type="file"><br><br>
+    <!--selecionar el .... de...-->
+    <input type="month"><br><br>
+    <!--selecionar un rango-->
+    <input type="range"><br><br>
+    <!--selecionar la hora-->
+    <input type="time"><br><br>
+    <!--selecionar Semana .., ....-->
+    <input type="week"><br><br>
+    <!--selecionar Semana .., ....-->
+    <input type="email"><br><br>
+    <!--selecionar Semana .., ....-->
+    <input type="image"><br><br>
+    <!--un buscador .., ....-->
+    <input type="search"><br><br>
+    <input type="url">
+
+</body>
+
+</html>

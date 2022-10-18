@@ -1,0 +1,26 @@
+
+/*Aunque css sea en casada y por consiguiten, 
+el h1 debería ser azul, al tener un id, éste prevalece
+sobre cualquier otro selector*/
+#encabezado-uno{
+    color: red;
+}
+/*Si le pongo el nombre de la etiqueta, estoy seleccionando todos los h1*/
+h1{
+    font-size: 30px;
+    color: blue;
+}
+/*Selecctores mediante id*/
+#mi_id_unico {
+    text-align: center;
+    color: red;
+}
+
+/*Selectores mediante clase*/
+.mi-clase {
+    background-color: #e8505b;
+    color: #f3ecc2;
+}
+.mi-clase2 {
+    color: green;
+}
